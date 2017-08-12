@@ -1,2 +1,2 @@
-# ruby-armoury
-This is my Ruby playpen
+#  Ruby Armoury
+This is my Ruby armoury and it is my journey towards learning Ruby
