@@ -12,7 +12,7 @@
 # until you have passed by the students 100 times.
 # What is the state of the hats when you have finished?
 
-class Hats
+class Hats  # Hats is the man who walks along students
 
     attr_accessor :number_of_students   # number_of_students : Integer
     attr_accessor :students             # students : Array of Student
