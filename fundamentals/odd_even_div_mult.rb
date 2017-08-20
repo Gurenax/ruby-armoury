@@ -10,7 +10,7 @@ class OddEvenDivMult
     end
 
     def is_odd(number)
-        number != 0 ? number % 1 == 0 : false   # zero is an even number
+        !(number % 2 == 0)
     end
 
     def div_or_mult_two(number)
