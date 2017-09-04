@@ -1,5 +1,5 @@
 class Service
-    include BCrypt
+    # include BCrypt
 # - @name e.g. "Netflix"
 # - @accounts
 # - @email
@@ -32,7 +32,7 @@ class Service
         # Create New Account
         new_account = Account.new
         new_account.email = email.downcase # E-mail will always be in lower case for consistency
-        new_account.password = Password.create(password)
+        new_account.password = password #Password.create(password)
 
         # Create New Profile
         new_profile = Profile.new
@@ -162,9 +162,11 @@ class Service
         if login_account.nil?
             false
         else
+            puts login_account.password
+            puts password
             login_account.password == password
-            puts Password.new(login_account.password)
-            puts Password.create(login_account.password)
+            # puts Password.new(login_account.password)
+            # puts Password.create(login_account.password)
         end
     end
 

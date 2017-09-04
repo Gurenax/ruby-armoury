@@ -1,4 +1,4 @@
-require 'bcrypt' # To encrypt passwords
+# require 'bcrypt' # To encrypt passwords
 require_relative 'service'
 require_relative 'account'
 require_relative 'profile'
