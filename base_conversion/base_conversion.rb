@@ -117,3 +117,19 @@ p convert_decimal_to_hex(2254, 16)
 
 # p convert_decimal_to_hex(15, 16)
 # p convert_decimal_to_hex(16, 16)
+
+
+DIGITS = ('0'..'9').to_a + ('A'..'Z').to_a
+def number_to_base(number, base)
+    return '0' if number == 0
+    return 'indeterminate' if base < 2
+
+    output = ''
+    while number > 0
+        bit = number % base
+        letter = DIGITS[bit]
+        output = letter + output
+        number = number / base
+    end
+    output
+end
