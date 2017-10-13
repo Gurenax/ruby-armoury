@@ -24,8 +24,8 @@ parse_page.css('.bitcoin_history').map do |a|
 end
 
 # this will push your array into a CSV file
-# CSV.open('pets.csv', 'w') do |csv|
-#     csv << data_array
-# end
+CSV.open('pets.csv', 'w') do |csv|
+    csv << data_array
+end
 
 pry.start(binding)

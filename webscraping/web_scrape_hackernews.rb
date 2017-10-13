@@ -27,4 +27,4 @@ CSV.open('hackernews.csv', 'w') do |csv|
     csv << hackernews
 end
 
-# pry.start(binding)
+pry.start(binding)
